@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="newan creations" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ඔබට අවශ්‍ය post හදාගන්න දැන්ම කතා කරන්න ඔනේම post එකකට 
+-Tution class post
+-company posts
+-any posts">
+    <title>NEWAN CREATIONS</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts (Optional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome CDN for Icons (Optional) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body class="bg-gray-100 font-sans antialiased">
+
+    <!-- Navbar Section -->
+    <header class="bg-indigo-600 text-white">
+        <div class="container mx-auto flex items-center justify-between p-5">
+            <h1 class="text-3xl font-bold">NEWAN CREATIONS</h1>
+            <nav>
+                <ul class="flex space-x-8">
+                    <li><a href="#about" class="hover:text-gray-200">About</a></li>
+                    <li><a href="#portfolio" class="hover:text-gray-200">Portfolio</a></li>
+                    <li><a href="#contact" class="hover:text-gray-200">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-screen flex flex-col justify-center items-center text-center bg-indigo-900 text-white" style="background-image: url('https://via.placeholder.com/1600x900');">
+        <h2 class="text-5xl font-semibold mb-4">Hi, I'm [Your Name]</h2>
+        <p class="text-lg mb-8">Creative Graphic Designer with a passion for making beautiful things</p>
+        <a href="#portfolio" class="bg-indigo-500 px-6 py-3 rounded-full text-lg font-semibold hover:bg-indigo-700 transition duration-300">View Portfolio</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-black text-center">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-indigo-600 mb-4">About Me</h2>
+            <p class="text-lg text-gray-600 mx-auto max-w-2xl">I'm a passionate graphic designer with over 1 years of experience in creating stunning visuals. I work closely with clients to bring their ideas to life through creative designs that speak to their target audience.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-indigo-600 mb-8">My Portfolio</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 1" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-xl">Project Title 1</h3>
+                        <p class="text-gray-500 mt-2">A description of this project and the work done.</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 2" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-xl">Project Title 2</h3>
+                        <p class="text-gray-500 mt-2">A description of this project and the work done.</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 3 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 3" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-xl">Project Title 3</h3>
+                        <p class="text-gray-500 mt-2">A description of this project and the work done.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-indigo-600 text-white text-center">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+            <p class="text-lg mb-8">Feel free to get in touch for collaborations or inquiries.</p>
+            <a href="wthilani20@gmail.com" class="bg-white text-indigo-600 px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-200 transition duration-300">Email Me</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 DesignerHub. All Rights Reserved.</p>
+            <div class="mt-4">
+                <a href="https://web.facebook.com/me/" target="_blank" class="text-indigo-400 mx-2"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com" target="_blank" class="text-indigo-400 mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com" target="_blank" class="text-indigo-400 mx-2"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smooth Scroll JavaScript -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
